@@ -9,9 +9,22 @@ class RowAndColumn extends StatelessWidget {
       body: Container(
         color: Colors.grey,
         child: Row(
+          /*
+          handle row width:
+            min = wrap_content
+            max = match_parent
+          */
+          mainAxisSize: MainAxisSize.max,
+
+          // Control free space in main axis
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+          // Control free space in secondary axis
+          crossAxisAlignment: CrossAxisAlignment.center,
+
           children: [
             ColorBox(),
-            ColorBox(),
+            BiggerColorBox(),
             ColorBox(),
           ],
         ),
