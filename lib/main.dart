@@ -1,3 +1,5 @@
+import 'package:flut_test/my_flexible.dart';
+import 'package:flut_test/popular_widgets.dart';
 import 'package:flut_test/row_and_column.dart';
 import 'package:flut_test/container_lesson.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +14,7 @@ class Application extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
     title: "Quiz",
     theme: ThemeData(primarySwatch: Colors.amber),
-    home: MyContainer(),
+    home: PopularWidgetsColumn(),
   );
 }
 
